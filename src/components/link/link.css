@@ -1,0 +1,125 @@
+.link-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-m);
+  border-radius: var(--radius);
+  background-color: var(--lighter-bg-color);
+  padding: 30px;
+
+  label {
+    display: none;
+  }
+
+  .link-field_container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-m);
+    font-size: var(--font-size-s);
+  }
+
+  .link-field_url {
+    flex-grow: 1;
+    label {
+      margin: 0;
+    }
+
+    input {
+      height: 40px;
+    }
+  }
+
+  .link-field_text {
+  }
+
+  .link-field_separator {
+    opacity: 0.4;
+  }
+
+  .link-field_options {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-l);
+    font-size: var(--font-size-s);
+  }
+
+  .link-field_option-target {
+    flex-shrink: 0;
+
+    [class^='_switchField'] {
+      width: auto;
+    }
+
+    label {
+      display: block;
+      order: -1;
+      margin-inline-end: var(--spacing-m);
+      white-space: nowrap;
+    }
+  }
+
+  .link-field_record {
+    display: flex;
+    position: relative;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: var(--depth);
+    border: 1px solid var(--darker-border-color);
+    border-radius: var(--radius);
+    background: white;
+    padding: 12px;
+  }
+
+  .link-field_record-loading {
+    padding: var(--spacing-m);
+  }
+  .link-field_record-image {
+    border-radius: var(--radius);
+    background: rgba(0, 0, 0, 0.05);
+    aspect-ratio: 1;
+    height: 60px;
+  }
+
+  .link-field_record-type {
+    color: var(--light-body-color);
+    font-size: var(--font-size-xxs);
+  }
+  .link-field_record-url {
+    color: var(--light-body-color);
+    font-size: var(--font-size-xxs);
+  }
+
+  .link-field_record-remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    translate: -40% 40%;
+    font-size: var(--font-size-s);
+  }
+
+  .link-field_record-status {
+    display: flex;
+    align-items: center;
+    color: var(--light-body-color);
+    font-size: var(--font-size-xxs);
+
+    &:before {
+      display: inline-block;
+      margin-right: 5px;
+      border-radius: 50%;
+      background-color: var(--placeholder-body-color);
+      width: 8px;
+      height: 8px;
+      content: '';
+    }
+
+    &.-published:before {
+      background-color: #45ca00;
+    }
+    &.-draft:before {
+      background-color: #8c8c8c;
+    }
+    &.-updated:before {
+      background-color: #dfda00;
+    }
+  }
+}

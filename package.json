@@ -1,0 +1,54 @@
+{
+  "name": "@buzzbrothers/datocms-plugin-buzz-link",
+  "description": "This plugin allows you to simply create some links to some dato model entries or to external URLs with some options like id and target",
+  "homepage": "https://github.com/buzzbrothers/datocms-buzz-link",
+  "version": "0.0.1",
+  "author": "Buzzbrothers <tech@buzzbrothers.com> (https://buzzbrothers.ch)",
+  "type": "module",
+  "keywords": [
+    "datocms-plugin",
+    "datocms",
+    "buzzbrothers",
+    "link",
+    "model",
+    "target"
+  ],
+  "datoCmsPlugin": {
+    "title": "Buzz Link",
+    "coverImage": "docs/datocms-plugin-buzz-link-cover.png",
+    "previewImage": "docs/datocms-plugin-buzz-link-preview.mp4",
+    "entryPoint": "dist/index.html",
+    "permissions": [
+      "currentUserAccessToken"
+    ]
+  },
+  "files": [
+    "dist",
+    "docs"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "publish": "npm publish --access public",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@datocms/cma-client-browser": "^3.3.15",
+    "@blackbyte/sugar": "^1.0.0-beta.4",
+    "datocms-plugin-sdk": "^2.0.0",
+    "datocms-react-ui": "^2.0.15",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "prettier-plugin-css-order": "^2.1.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "globals": "^15.9.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1"
+  }
+}
