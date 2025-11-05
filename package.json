@@ -1,7 +1,7 @@
 {
   "name": "@buzzbrothers/datocms-plugin-buzz-link",
   "description": "This plugin allows you to simply create some links to some dato model entries or to external URLs with some options like id and target",
-  "homepage": "https://github.com/buzzbrothers/datocms-buzz-link",
+  "homepage": "https://github.com/buzzbrothers/datocms-plugin-buzz-link",
   "version": "0.0.1",
   "author": "Buzzbrothers <tech@buzzbrothers.com> (https://buzzbrothers.ch)",
   "type": "module",

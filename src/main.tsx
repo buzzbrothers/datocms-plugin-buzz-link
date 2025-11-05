@@ -25,8 +25,8 @@ connect({
   manualFieldExtensions(ctx: IntentCtx) {
     return [
       {
-        id: 'link',
-        name: 'Link e',
+        id: 'buzz-link',
+        name: 'Buzz link',
         type: 'editor',
         fieldTypes: ['json'],
         configurable: false
@@ -44,7 +44,7 @@ connect({
   },
   renderFieldExtension(fieldExtensionId: string, ctx: RenderFieldExtensionCtx) {
     switch (fieldExtensionId) {
-      case 'link':
+      case 'buzz-link':
         return render(<LinkField ctx={ctx} />)
     }
   },
